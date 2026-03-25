@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans Ethiopic", Arial;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 80px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    position: relative;
+    color: white;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: orange;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* GRID LAYOUT */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD BASE */
+.card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* DIFFERENT STYLES */
+.በቃልፈርኒቸር {
+    grid-row: span 2;
+    background: #f0e6ff;
+}
+.ቁምሳጥን {
+    grid-column: span 2;
+    background: #e6ffe6;
+}
+
+.ኣልጋ {
+    grid-column: span 2;
+    background: #ffe4e1;
+}
+
+.ሶፋ {
+    background: #e6f0ff;
+}
+
+.መመገቢ {
+    background: #e6ffe6;
+}
+
+.ወንበር {
+    background: #fff5cc;
+}
+
+.ቦፌ {
+    grid-row: span 2;
+    background: #f0e6ff;
+}
+
+/* BUTTON */
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+/* HOVER */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* POPUP */
+#popup {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup img {
+    width: 60%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bed,
+    .wardrobe {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px;
+    }
+
+    #popup img {
+        width: 95%;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>በቃል ፈርኒቸር</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" class="logo">
+    <h1>በቃል ፈርኒቸር</h1>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#መእተዊ">መእተዊ</a></li>
+            <li><a href="#ምህርቲታት">ምህርቲታት</a></li>
+            <li><a href="#ኣድራሻ">ኣድራሻ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="መእተዊ">
+    <h2>እንቋዕ ናብ በቃል ፈርኒቸር ብደሓን መጻእኩም ።</h2>
+    <p>ዘመናዊን ተመጣጣን ዋጋ ዘለዎ ፈርኒቸር ንቤትኩም</p>
+</section>
+
+<!-- SERVICES -->
+<section id="ምህርቲታት">
+    <h2>ምህርቲታትና </h2>
+
+    <div class="service-container">
+       
+        <div class="card በቃልፈርኒቸር">
+            <img src="images/በቃልፈርኒቸር.jpg" onclick="openImage(this)">
+            <h3>በቃልፈርኒቸር</h3>
+            
+        </div>
+
+        <div class="card ቁምሳጥን">
+            <img src="images/ቁምሳጥን.jpg" onclick="openImage(this)">
+            <h3>ቁምሳጥን</h3>
+           
+        </div>
+
+        <div class="card ኣልጋ">
+            <img src="images/ኣልጋ.jpg" onclick="openImage(this)">
+            <h3>ኣልጋ</h3>
+            
+        </div>
+
+        <div class="card መመገቢ">
+            <img src="images/መመገቢ.jpg" onclick="openImage(this)">
+            <h3>መመገቢ ጠረጴዛ</h3>
+            
+        </div>
+
+        <div class="card ሶፋ">
+            <img src="images/ሶፋ.jpg" onclick="openImage(this)">
+            <h3>ሶፋ</h3>
+            
+        </div>
+
+        <div class="card ወንበር">
+            <img src="images/ወንበር.jpg" onclick="openImage(this)">
+            <h3>ወንበር</h3>
+          
+        </div>
+
+        <div class="card ቦፌ">
+            <img src="images/ቦፌ.jpg" onclick="openImage(this)">
+            <h3>ቦፌ</h3>
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- IMAGE POPUP -->
+<div id="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+
+<!-- ADDRESS -->
+<section id="ኣድራሻ">
+    <h2>ኣድራሻና</h2>
+    <p>ፊት ንፊት ስታዲየም መኾኒ ንኣንፈት ሰሜን </p>
+    <p>መኾኒ ትግራይ  ኢትዮጵያ </p>
+    <p>ሞባይል : +251 943 6080 00</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 በቃል ፈርኒቸር </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
