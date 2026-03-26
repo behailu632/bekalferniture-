@@ -55,13 +55,17 @@ nav a:hover::after {
 section {
     padding: 40px;
     text-align: center;
+    color: #333;
+    font-size: 16px;
+
 }
 
 /* GRID LAYOUT */
 .service-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
 /* CARD BASE */
@@ -70,58 +74,111 @@ section {
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s;
+    text-align: center;
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 1 / 1;
     object-fit: cover;
     cursor: pointer;
+    border-radius: 10px;
 }
-
 /* DIFFERENT STYLES */
 .በቃልፈርኒቸር {
-    grid-row: span 2;
     background: #f0e6ff;
 }
 .ቁምሳጥን {
-    grid-column: span 2;
     background: #e6ffe6;
+}
+.ቁምሳጥን1 {
+    background: #eae6ff;
+}
+.ቁምሳጥን2 {
+    background: #f0ffe6;
+}
+.ቁምሳጥን3 {
+    background: #e6fff5;
+}
+.ቁምሳጥን4 {
+    background: #e6ffe6;
+}
+.ቁምሳጥን5 {
+    background: #e6ffe6;
+}
+.ቁምሳጥን6 {
+    background: #fff8e6;
 }
 
 .ኣልጋ {
-    grid-column: span 2;
+    background: #fdffe1;
+}
+.ኣልጋ1 {
+    background: #e1feff;
+}
+.ኣልጋ2 {
+    background: #e1fff7;
+}
+.ኣልጋ3 {
     background: #ffe4e1;
 }
-
+.ኣልጋ4 {
+    background: #e1ffe8;
+}
+.ኣልጋ5 {
+    background: #ecffe1;
+}
 .ሶፋ {
-    background: #e6f0ff;
+    background: #f4ffe6;
+}
+.ሶፋ1 {
+    background: #e6fff5;
+}
+.ሶፋ2 {
+    background: #fee6ff;
+}
+.ሶፋ3 {
+    background: #ede6ff;
 }
 
 .መመገቢ {
-    background: #e6ffe6;
+    background: #fff2e6;
+}
+.መመገቢ1 {
+    background: #f1ffe6;
+}
+.መመገቢ2 {
+    background: #e6fcff;
 }
 
 .ወንበር {
-    background: #fff5cc;
+    background: #daffcc;
 }
 
 .ቦፌ {
-    grid-row: span 2;
-    background: #f0e6ff;
+    
+    background: #e6fff3;
 }
-
-/* BUTTON */
-button {
-    background: green;
-    color: white;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
+.ቦፌ1 {
+    
+    background: #e6e8ff;
 }
-
-button:hover {
-    background: darkgreen;
+.ቦፌ2 {
+    
+    background: #e6fffc;
+}
+.ቦፌ3 {
+    
+    background: #ebe6ff;
+}
+.መመላኽዒ1 {
+    
+    background: #e6fff9;
+}
+.መቀመጢቴቪ1 {
+    
+    background: #edffe6;
 }
 
 /* HOVER */
@@ -150,12 +207,6 @@ button:hover {
 
     .service-container {
         grid-template-columns: 1fr;
-    }
-
-    .bed,
-    .wardrobe {
-        grid-column: span 1;
-        grid-row: span 1;
     }
 
     nav li {
