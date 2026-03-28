@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: "Noto Sans Ethiopic", Arial;
-    background: cornflowerblue;
+    background-color: cornflowerblue;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 /* HEADER */
